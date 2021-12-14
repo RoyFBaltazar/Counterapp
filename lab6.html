@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="labcss.css">
+</head>
+<body>
+    <h1>Counter</h1>
+    <div id="total">0</div>
+    <button id="add">+</button>
+    <button id="subtract">-</button>
+    <button id="mult-2">x2</button>
+    <button id="div-2">/2</button>
+    <button id="mult-5">x5</button>
+    <button id="div-5">/5</button>
+    <button id="clear">CLEAR</button>
+    <script>
+        // Select Total / Create Variables
+        let total = document.getElementById('total');
+        // Create Six Functions
+        function add(){
+            count++;
+            total.textContent = count
+            alert(total.textContent)
+        }
+
+
+        function subtract(){
+            count--
+            total.textContent -= 1
+            alert(total.textContent)
+        }
+        function multiply (){
+            count*= 2;
+            update()
+        }
+        function divide (){
+            count/= 2;
+            update()
+        }
+        function multiply5 (){
+            count*=5
+            update()
+        }
+        function divide5 (){
+            count/= 5;
+            update()
+        }
+        function clear(){
+            count*=0
+              update()
+        }
+        function update(){
+            total.textContent = count
+            alert(total.textContent)
+        }
+    let count = 0;
+
+        // Attach Functions to Buttons
+        document.getElementById("add").onclick = add
+        document.getElementById("subtract").onclick = subtract
+        document.getElementById("mult-2").onclick = multiply
+        document.getElementById("div-2").onclick = divide
+        document.getElementById("mult-5").onclick = multiply5
+        document.getElementById("div-5").onclick = divide5
+        document.getElementById("clear").onclick = clear
+
+    </script>
+</body>
+</html>

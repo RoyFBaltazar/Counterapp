@@ -1,0 +1,21 @@
+*{
+    background-color: ghostwhite;
+}
+button{
+    color: red;
+    background-color: yellow;
+    border: solid rgb(187, 10, 10);
+    font-size: 24px;
+
+}
+h1{
+    color: red;
+    display: flex;
+    justify-content: center;
+  
+    font-size: 4em;
+}
+#total {
+    font-size: 2em;
+    color: royalblue;
+}
